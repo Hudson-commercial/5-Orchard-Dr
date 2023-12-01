@@ -2,9 +2,6 @@
 # 5-Orchard-Dr
 https://hudson-commercial.github.io/5-Orchard-Dr/
 
-# A new version with side navigation. 
-
-
 
 # The 5 Ochard Dr St For Lease / 5-Orchard-Dr
 > A Github page website used as a web brochure for a piece of real estate.
