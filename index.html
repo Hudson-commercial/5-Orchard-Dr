@@ -1,274 +1,399 @@
+
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title></title>
-      <!-- Font Awesome -->
-      <link
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-         rel="stylesheet"
-         />
-      <!-- Google Fonts -->
-      <link
-         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-         rel="stylesheet"
-         />
-      <!-- MDB -->
-      <link
-         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-         rel="stylesheet"
-         />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <!--Main Navigation-->
-      <header>
-         <!-- Intro settings -->
-         <style>
-            #intro {
-            /* Margin to fix overlapping fixed navbar */
-            margin-top: 100px;
-            font-family: 'Raleway', sans-serif;
-            background: #2e3131;
-            color: white !important;
-            }
-            body, html {
-            max-width: 100vw;
-            overflow-x: hidden; // hide vertical
-            }
-            .intro-h2 {
-            font-size: 5em;
-            }
-            .h2-desc {
-            font-size: 3em;
-            margin-bottom: .5em;
-            }
-            .intro-pargh {
-            font-size: 2.5em;
-            color: white;
-            }
-            .intro-span {
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5 Orchard Drive </title>
+  <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!--Main Navigation-->
+<header>
+  <style>
+    #intro {
+      background-image: url("./img/5-Orchard-Dr-Gardiner-NY-Building-Photo-5-LargeHighDefinition.jpeg");
+      height: 100vh;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #intro {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+    .Logo-nav {
+      padding-top: 0px;
+      margin-top: 0px;
+      position: relative;
+      background-color: rgb(0 31 66);
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+    .Logo-nav p {
+      font-size: 1.2em;
+        margin: 0;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    }
+    .neg-margin {
+      margin-top: -143px;
+    }
+        .or {
             position: relative;
-            bottom: .15em;
-            color: white; 
+            bottom:  20px; 
+            font-size: 1em;
+            color: #375172;
             }
-            .main-image {
-            background: url(image.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 600px;
-            width: 100%;
+            .address- {
+            position: relative;
+            top:  70%;
             }
-            .h2-desc {
-            margin-top: 3em;
+            .property-info{
+            margin-top: 10%;
             }
-            .banner-hr {
-            width: 30%;
-            margin: auto;
-            margin-bottom: 2em;
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+            #intro {
+            margin-top: -58.59px;
             }
-            .main-desc-text {
-            width: 76%;
-            margin: 10em auto;
-            font-size: 1.5em;
-            line-height: 2em;
             }
-            .map-container {
-            max-width: 100%;
-            margin: auto;
+            .navbar .nav-link {
+            color: #fff !important;
             }
-            .map {
-            width: 100%;
-            margin: 4em auto;
-            overflow-x: hidden; // hide vertical
+            .dark-background {
+               background-color: #375172 !important;
             }
-            .map-1 {
-               margin-top: 2em;
+            .dark-blue-color {
+               color: #375172;
             }
-         </style>
-         <!-- Navbar -->
-         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <div class="container-fluid">
-               <!-- Navbar brand -->
-               <a class="navbar-brand" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-               </a>
-               <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                  aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-               <i class="fas fa-bars"></i>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarExample01">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#intro">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="mailto:sam@hudsoncommercial.com" rel="nofollow"
-                           target="_blank">Email The Broker</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="tell:845-454-1444" target="_blank">Call Sam Finnerman</a>
-                     </li>
-                  </ul>
-                  <ul class="navbar-nav d-flex flex-row">
-                     <!-- Icons -->
-                     <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="https://www.instagram.com/hudson.commercial.real.estate/" rel="nofollow"
-                           target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        </a>
-                     </li>
-                     <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="https://www.facebook.com/Hudson-Commercial-Real-Estate-Corp-111074927066980/?view_public_for=111074927066980/" rel="nofollow" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                        </a>
-                     </li>
-                     <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="https://twitter.com/noah15977842" rel="nofollow" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        </a>
-                     </li>
-                     <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="https://www.linkedin.com/company/hudson-commercial-real-estate-corp/" rel="nofollow" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-         <!-- Navbar -->
-      </header>
-      <!--Main Navigation-->
-      <!--Main layout-->
-      <main class="my-5">
+            .btn-outline-dark-blue {
+               border-color: #375172 !important;
+               color: #375172 !important;
+            }
+            .footer-bootom {
+              background-color: rgb(68, 149, 219);
+            }
+          footer{
+            background-color: rgb(23, 72, 115);
+          }
+          .navbar-expand-lg  {
+            padding-top: 0px;
+          }
+          .Nav-logo {
+            position: relative;
+            top: .2em;
+
+          }
+          .button-color{
+            background-color: rgb(23, 72, 115) !important;
+          }
+  </style>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+        <strong class="Logo-nav"><p>H</p></strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+               target="_blank"> <h5 class="Nav-logo">  5 Orchard Dr </h5></a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://hudsoncommercial.com/" > <h7 class="Nav-logo ">Our Listings <h7/></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hudsoncommercial.com/contact-us/" target="_blank"> <h7 class="Nav-logo">Contact us</h7></a>
+          </li>
+        </ul>
+
+
+        <ul class="navbar-nav d-flex flex-row">
+          <!-- Icons -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.instagram.com/hudson.commercial.real.estate/" rel="nofollow"
+               target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="www.facebook.com/Hudson-Commercial-Real-Estate-Corp-111074927066980/?view_public_for=111074927066980/" rel="nofollow" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="noah15977842" rel="nofollow" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://github.com/Hudson-commercial" rel="nofollow" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Background image -->
+  <div id="intro" class="bg-image shadow-2-strong">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
+      <div class="container d-flex align-items-center justify-content-start text-center h-100 neg-margin">
+        <div class="text-white" data-mdb-theme="dark">
+          <h1 class="mb-3"> 5 Orchard Dr, Gardiner, NY 12525</h1>
+          <h5 class="mb-4"> 9,000 - 31,000 SF Of Industrial Space Available </h5>
+          <a class="btn btn-outline-light btn-lg m-2" href="tel:8454541444" role="button"
+             rel="nofollow" target="_blank"> Contact Broker</a>
+          <a class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init href="https://www.loopnet.com/Listing/5-Orchard-Dr-Gardiner-NY/29938927/" target="_blank"
+             role="button">Veiw On Loopnet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Background image -->
+</header>
+<!--Main Navigation-->
+
+     <!--Main layout-->
+      <main class="mt-5">
          <div class="container">
             <!--Section: Content-->
-            <section>
-               <!-- Jumbotron -->
-               <div id="intro" class="p-5 text-center  shadow-5 rounded-5 mb-5 ">
-                  <h1 class="mb-3 h2 intro-h2"><span class="intro-span">5 </span> ORCHARD DRIVE</h1>
-                  <p class="mb-3 intro-pargh">Warehouse - Hudson Valley Area Gardiner, NY 12525</p>
-               </div>
-               <!-- Jumbotron -->
-               <div class="main-image ">
-               </div>
-            </section>
-            <!--Section: Content-->
-            <h2 class="h2-desc text-center">Description</h2>
-            <hr class="banner-hr">
-            <div class="container  ">
-               <p class="main-desc-text text-center pb-4 mb-4 mt-4">
-                  For lease, 29, 545 sq. ft. of warehouse on 7 acre site. Located along NYS RT-32, 1.1 miles south of RT- 44/55, 10.3 miles / 15 minutes north of I-84 E/W and RT-17K near I-87 N/S. The ceiling height ranges from 12’-25’. The building has eight (8) loading docks, one drive-in door up a ramp. Water and sewer are well and septic. The original building was built in the 1950’s and the adjacent building add-on was built in 1985. Both are fully insulated warehouses. Possession is immediate. Currently used for ware- house with heating and air conditioning and two large storage yards. Property includes an adjacent modular office building of about 1,500 sq. ft. 800 amp, 3 phase electric, propane gas heat. Zoned BD 60 Light Business. Base rental is $9.50 per sq. ft. net.
-               </p>
-            </div>
-            <div class="col-md-6 m-auto mt-4">
-               <div class="container">
-                  <div class="well spaces">
-                     <h2 class="text-center h2-desc ">Property Facts</h2>
-                     <hr class="banner-hr">
-                     <ul class="list-group mt-4">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Price
-                           <span class="badge indigo bg-dark indigo bg-dark badge-pill">$9.50 Per Sq. Ft.</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           No. Stories
-                           <span class="badge indigo bg-dark badge-pill">1</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Property Type
-                           <span class="badge indigo bg-dark badge-pill">Industrial</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Year Built
-                           <span class="badge indigo bg-dark badge-pill">1987</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Ceiling Height
-                           <span class="badge indigo bg-dark badge-pill">12’-25’</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Docks
-                           <span class="badge indigo bg-dark badge-pill">6</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Drive In
-                           <span class="badge indigo bg-dark badge-pill">1</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Lot Size
-                           <span class="badge indigo bg-dark badge-pill">7 AC</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Address
-                           <span class="badge indigo bg-dark badge-pill"> 5 Orchard Dr Gardiner, NY 12525</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Available
-                           <span class="badge indigo bg-dark badge-pill"> 29,454 Sq. Ft</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                           Property Sub-type
-                           <span class="badge indigo bg-dark badge-pill">Warehouse/ lite industrial</span>
-                        </li>
+            <section class="property-info">
+               <div class="row">
+                  <div class="col-md-6 gx-5 mb-4">
+                     <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                        <img src="./img/5-Orchard-Dr-Gardiner-NY-Building-Photo-11-LargeHighDefinition.jpeg" class="img-fluid" />
+                        <a href="#!">
+                           <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-6 gx-5 mb-4">
+                     <h4><strong>About this property</strong></h4>
+                     <p class="text-muted">
+
+                      The original building was built in the 1950’s and the adjacent building add-on was built in 1985. Both are fully insulated warehouses. Possession is immediate. Currently used for ware- house with heating and air conditioning and two large storage yards. Property includes an adjacent modular office building of about 1,500 sq. ft. 800 amp, 3 phase electric, propane gas heat. Zoned BD 60 Light Business. Base rental is $9.50 per sq. ft. net.
+                     </p>
+                      
+                     <p><strong>Property Description </strong></p>
+                     <p class="text-muted">
+                        For lease, 29, 545 sq. ft. of warehouse on 7 acre site. Located along NYS RT-32, 1.1 miles south of RT- 44/55, 10.3 miles / 15 minutes north of I-84 E/W and RT-17K near I-87 N/S. The ceiling height ranges from 12’-25’. The building has eight (8) loading docks, one drive-in door up a ramp. Water and sewer are well and septic. 
+                     </p>
+                     <ul class="list-group">
+                        <li class="list-group-item"><strong>Price: </strong>$9.50 Per Sq. Ft / Net</li>
+                        <li class="list-group-item"><strong>Location: </strong>5 Orchard Dr, Gardiner, NY 12525</li>
+                        <li class="list-group-item"><strong>Building Size: </strong>43,844 SF</li>
+                        <li class="list-group-item"><strong>Price Per Month </strong>$31,666 </li>
+                        <li class="list-group-item"><strong>AC Lot: </strong> 7.4 Acers </li>
                      </ul>
                   </div>
                </div>
-            </div>
-            <div class="map-container">
-               <div>
-                  <h2 class="h2-desc text-center">Map Info</h2>
-                  <hr class="banner-hr">
-                  <img src="map-2.jpg" class="map map-1">
-                  <img src="map-1.jpg" class="map">
-                  <img src="terrain.jpg" class="map">
+            </section>
+            <!--Section: Content-->
+            <hr class="my-5" />
+            <!--Section: Content-->
+            <section class="text-center">
+               <div class="container h-100 text-center address-">
+                  <div class="row">
+                     <div class="">
+                        <div class="text-white">
+                           <h1 class="mb-3 dark-blue-color">5 Orchard Dr For Lease</h1>
+                           <h5 class="mb-4 dark-blue-color">5 Orchard Dr, Gardiner, NY 12525</h5>
+                           <a class="btn btn-outline-dark-blue btn-outline-  btn-lg m-2" href="tel:8454541444" role="button"
+                         > Call The Broker</a> <span class="or"> OR</span>
+                           <a class="btn btn-outline-dark-blue btn-lg  btn-outline- m-2" href="mailto:sam@hudsoncommercial.com" target="_blank"
+                              role="button">Email The Broker</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br> <br> 
+               <hr>
+               <br> <br>
+               <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4">
+                     <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                           <img src="./img/5-Orchard-Dr-Gardiner-NY-Building-Photo-1-LargeHighDefinition.jpeg" class="img-fluid" />
+                           <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                           <img src="./img/5-Orchard-Dr-Gardiner-NY-Building-Photo-10-LargeHighDefinition.jpeg" class="img-fluid" />
+                           <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                           <img src="./img/5-Orchard-Dr-Gardiner-NY-Building-Photo-13-LargeHighDefinition.jpeg" class="img-fluid" />
+                           <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Section: Content-->
+            <hr class="my-5" />
+            <!--Section: Content-->
+            <section class="mb-5 footer-bootom">
+
+            </div>   <!-- End Of Container -->
+      <!-- ******FOOTER****** --> 
+      <footer id="footer footer--bg">
+         <div class="footer-top  footer--bg  text-white p-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-contact text-white ">
+                     <h3 class= "text-white">Hudson Commercial </h3>
+                     <p class= "text-white">
+                        2678 South Rd Ste 103,<br>
+                        Poughkeepsie, NY 12601<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> <a class="text-white" href="845-454-1444">+1 845 454-1444</a><br>
+                        <strong>Email:</strong> sam@hudsoncommercial.com<br>
+                     </p>
+                  </div>
+                  <div class="col-lg-2 col-md-6 footer-links text-white">
+                     <h4 class= "text-white">Useful Links</h4>
+                     <ul>
+                        <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="https://hudsoncommercial.com/">Home</a></li>
+                        <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="https://hudsoncommercial.com/frontpage/about/">About us</a></li>
+                        <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="https://hudsoncommercial.com/management/">Management</a></li>
+                        <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="https://hudsoncommercial.com/contact-us/">Contact Us</a></li>
+                        <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="https://hudsoncommercial.com/property/240-chestnut-st/">Website Listing</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links text-white">
+                     <h4 class= "text-white">Our Services</h4>
+                     <ul>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class= "text-white" href="#">Building Management</a></li>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class= "text-white" href="#">Construction Management</a></li>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class= "text-white" href="#">Real Estate Sales</a></li>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class= "text-white" href="#">Real Estate Development</a></li>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class= "text-white" href="#">Real Estate Consulting </a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-info text-white">
+                     <h3 class=" text-white">About US</h3>
+                     <p class=" text-white">At Hudson Commercial Real Estate, our goal is to provide you with the leading edge – empowering you with more choices, market knowledge, and superb execution in real estate.</p>
+                  </div>
                </div>
             </div>
          </div>
+         <div class="container d-md-flex py-4">
+            <div class="mr-md-auto text-center text-md-left">
+               <div class="copyright text-white">
+               </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+               <a href="#" class="twitter  bg-black "><i class="bx bxl-twitter  bg-black "></i></a>
+               <a href="#" class="facebook  bg-black "><i class="bx bxl-facebook  bg-black "></i></a>
+               <a href="#" class="instagram  bg-black "><i class="bx bxl-instagram  bg-black "></i></a>
+               <a href="#" class="google-plus  bg-black "><i class="bx bxl-skype  bg-black "></i></a>
+               <a href="#" class="linkedin  bg-black   "><i class="bx bxl-linkedin  bg-black "></i></a>
+            </div>
+         </div>
+      </footer>
+            </section>
+            <!--Section: Content-->
+        
       </main>
       <!--Main layout-->
-      <div class="footer-top  bg-dark text-white p-4">
-         <div class="container p-4">
-            <div class="row p-4">
-               <div class="col-lg-3 col-md-6 footer-contact text-white ">
-                  <h3 class="text-white">Hudson Commercial </h3>
-                  <p class="text-white">
-                     2678 South Rd Ste 103,<br>
-                     Poughkeepsie, NY 12601<br>
-                     United States <br><br>
-                     <strong>Phone:</strong> +1 845 454-1444<br>
-                     <strong>Email:</strong> sam@hudsoncommercial.com<br>
-                  </p>
-               </div>
-               <div class="col-lg-2 col-md-6 footer-links text-white">
-                  <h4 class="text-white">Website Links</h4>
-                  <ul>
-                     <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="#">Home</a></li>
-                     <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="#">About us</a></li>
-                     <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="#">Services</a></li>
-                     <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="#">Terms of service</a></li>
-                     <li><i class="bx bx-chevron-right  text-white"></i> <a class=" text-white" href="#">Privacy policy</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-3 col-md-6 footer-links text-white">
-                  <h4 class="text-white">Our Services</h4>
-                  <ul>
-                     <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Building Management</a></li>
-                     <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Construction Management</a></li>
-                     <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Real Estate Sales</a></li>
-                     <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Real Estate Development</a></li>
-                     <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Real Estate Consulting </a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-3 col-md-6 footer-info text-white">
-                  <h3 class=" text-white">About US</h3>
-                  <p class=" text-white">At Hudson Commercial Real Estate, our goal is to provide you with the leading edge – empowering you with more choices, market knowledge, and superb execution in real estate.</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+
+<!--Footer-->
+<footer class="bg-light text-lg-start text-white">
+  <div class="py-4 text-center">
+    <a role="button" class="btn btn-primary btn-lg m-2 button-color" data-mdb-ripple-init
+       href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
+      Contact Broker
+    </a>
+    <a role="button" class="btn btn-primary btn-lg m-2 button-color" data-mdb-ripple-init href="https://mdbootstrap.com/docs/standard/" target="_blank">
+      Veiw On Loopnet
+    </a>
+  </div>
+
+  <hr class="m-0" />
+
+  <div class="text-center py-4 align-items-center ">
+    <p>Follow MDB on social media</p>
+    <a href="https://www.instagram.com/hudson.commercial.real.estate/" class="btn btn-primary m-1 button-color" role="button" data-mdb-ripple-init
+       rel="nofollow" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/Hudson-Commercial-Real-Estate-Corp-111074927066980/?view_public_for=111074927066980/" class="btn btn-primary m-1 button-color" role="button" rel="nofollow" data-mdb-ripple-init
+       target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com/noah15977842" class="btn btn-primary m-1 button-color" role="button" rel="nofollow" data-mdb-ripple-init
+       target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://github.com/Hudson-commercial" class="btn btn-primary m-1 button-color" role="button" rel="nofollow" data-mdb-ripple-init
+       target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Hudson Commercial Real Estate Corp.</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--Footer-->
+
+</body>
 </html>
